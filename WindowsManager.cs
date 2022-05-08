@@ -30,18 +30,26 @@ namespace Student_Status_Management_2._0
 
         public static void Sort()
         {
-            Data.studentsList.Sort(delegate (Student p1, Student p2)
+            if (Data.studentsList.Count==0)
             {
-                return p2.Gpa.CompareTo(p1.Gpa);//降序
-            });
-            int i = 1;
-            foreach (Student p in Data.studentsList)
-            {
-                p.Rank = i;
-                i++;
+                MessageBox.Show("暂无学生");
             }
-           
-            MessageBox.Show("排序成功");
+            else
+            {
+                Data.studentsList.Sort(delegate (Student p1, Student p2)
+                {
+                    return p2.Gpa.CompareTo(p1.Gpa);//降序
+                });
+                int i = 1;
+                foreach (Student p in Data.studentsList)
+                {
+                    p.Rank = i;
+                    i++;
+                }
+
+                MessageBox.Show("排序成功");
+            }
+
         }
 
     }
