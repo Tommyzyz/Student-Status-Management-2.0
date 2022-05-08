@@ -17,7 +17,8 @@ namespace Student_Status_Management_2._0
 
         public static void Find()
         {
-
+            System.Windows.Window Findwindow = new Window.FindWindow();
+            Findwindow.ShowDialog();
         }
 
         public static void Show()
@@ -43,9 +44,5 @@ namespace Student_Status_Management_2._0
             MessageBox.Show("排序成功");
         }
 
-        public static void Delete()
-        {
-
-        }
     }
 }
