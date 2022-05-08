@@ -6,14 +6,15 @@ using System.Threading.Tasks;
 
 namespace Student_Status_Management_2._0
 {
-    internal class Student
+    public class Student
     {
-        private Student(int id, string name,int[] score)
+        public Student(int id, string name,int[] score)
         {
+            double gpa = (score[0] * 2 + score[1] * 2 + score[2] * 1.5 + score[3] * 1 + score[4]) / 6.5;
             this.Id = id;
             this.Name = name;
             this.score =score;
-            this.gpa = 0;
+            this.gpa = gpa;
             this.Rank = 0;
         }
 
@@ -24,7 +25,8 @@ namespace Student_Status_Management_2._0
 
         public int Id { get => id; set => id = value; }
         public string Name { get; set; } = String.Empty;
-        public double Gpa { get => gpa; set => gpa = value; }
+
+        public double Gpa { get => gpa;}
         public int Rank { get => rank; set => rank = value; }
         public int[] Grade { get => score; set => score = value; }
     }

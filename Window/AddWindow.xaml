@@ -7,13 +7,13 @@
         mc:Ignorable="d"
         Title="添加学生数据" Height="340" Width="649">
     <Grid x:Name="AddWindow1" Margin="0,0,0,5">
-        <TextBox x:Name="NameText" HorizontalAlignment="Left" Margin="100,100,0,0" TextWrapping="Wrap" Text="姓名" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="IdText" HorizontalAlignment="Left" Margin="300,100,0,0" TextWrapping="Wrap" Text="学号" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="Score" HorizontalAlignment="Left" Margin="500,200,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="60"/>
-        <TextBox HorizontalAlignment="Left" Margin="100,200,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="60"/>
-        <TextBox HorizontalAlignment="Left" Margin="200,200,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="60"/>
-        <TextBox HorizontalAlignment="Left" Margin="300,200,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="60"/>
-        <TextBox HorizontalAlignment="Left" Margin="400,200,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="60"/>
+        <TextBox x:Name="NameText" HorizontalAlignment="Left" Margin="100,100,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="IdText" HorizontalAlignment="Left" Margin="300,100,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="C_Text" HorizontalAlignment="Left" Margin="500,200,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="60"/>
+        <TextBox x:Name="ChineseText" HorizontalAlignment="Left" Margin="100,200,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="60"/>
+        <TextBox x:Name="MathText" HorizontalAlignment="Left" Margin="200,200,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="60"/>
+        <TextBox x:Name="EnglishText" HorizontalAlignment="Left" Margin="300,200,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="60"/>
+        <TextBox x:Name="PhysicsText" HorizontalAlignment="Left" Margin="400,200,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="60"/>
         <Label Content="姓名" HorizontalAlignment="Left" Margin="100,50,0,0" VerticalAlignment="Top"/>
         <Label Content="学号" HorizontalAlignment="Left" Margin="300,50,0,0" VerticalAlignment="Top"/>
         <Label Content="语文" HorizontalAlignment="Left" Margin="100,170,0,0" VerticalAlignment="Top"/>
@@ -22,6 +22,6 @@
         <Label Content="成绩" HorizontalAlignment="Left" Margin="96,136,0,0" VerticalAlignment="Top"/>
         <Label Content="物理" HorizontalAlignment="Left" Margin="400,170,0,0" VerticalAlignment="Top"/>
         <Label Content="C#" HorizontalAlignment="Left" Margin="500,170,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="ButtonOk" Content="确认" HorizontalAlignment="Left" Margin="530,100,0,0" VerticalAlignment="Top" Width="58"/>
+        <Button x:Name="ButtonOk" Content="确认添加" HorizontalAlignment="Left" Margin="530,100,0,0" VerticalAlignment="Top" Width="58" Click="ButtonOk_Click"/>
     </Grid>
 </Window>

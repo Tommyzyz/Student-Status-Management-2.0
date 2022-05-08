@@ -15,20 +15,20 @@ using System.Windows.Shapes;
 namespace Student_Status_Management_2._0.Window
 {
     /// <summary>
-    /// AddWindow.xaml 的交互逻辑
+    /// ShowWindow.xaml 的交互逻辑
     /// </summary>
-    public partial class AddWindow : System.Windows.Window
+    public partial class ShowWindow :System.Windows.Window
     {
-        public AddWindow()
+        public ShowWindow()
         {
             InitializeComponent();
-        }
-
-        private void ButtonOk_Click(object sender, RoutedEventArgs e)
-        {
-            int[] score=new int[] { int.Parse(ChineseText.Text),int.Parse(MathText.Text),int.Parse(EnglishText.Text),int.Parse(PhysicsText.Text),int.Parse(C_Text.Text)};
-            Student st = new Student(int.Parse(IdText.Text),NameText.Text,score);
-            Data.studentsList.Add(st);
+            ShowText.Text = "姓名\t学号\t学分绩\t排名\t\r\n";
+            foreach (Student student in Data.studentsList)
+            {
+                ShowText.Text += student.Name+"\t"+student.Id + "\t" +student.Gpa.ToString("F2") + "\t" +student.Rank+ "\r\n";
+ 
+            }
+            
         }
     }
 }

@@ -1,20 +1,16 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows;
 
 namespace Student_Status_Management_2._0
 {
-    internal class StudentManager
+    public class WindowsManager
     {
-        private List<Student> studentsList=new();
-
         public static void Add()
         {
-            System.Windows.Window Addwindow  =new Window.AddWindow();
+            System.Windows.Window Addwindow = new Window.AddWindow();
             Addwindow.ShowDialog();
         }
 
@@ -25,7 +21,9 @@ namespace Student_Status_Management_2._0
 
         public static void Show()
         {
-
+            System.Windows.Window ShowWindow = new Window.ShowWindow();
+            ShowWindow.ShowDialog();
+            
         }
 
         public static void Sort()
@@ -37,7 +35,5 @@ namespace Student_Status_Management_2._0
         {
 
         }
-
-
     }
 }

@@ -23,7 +23,6 @@ namespace Student_Status_Management_2._0
         public MainWindow()
         {
             InitializeComponent();
-            StudentManager studentManager =new();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -34,27 +33,27 @@ namespace Student_Status_Management_2._0
 
         private void ButtonAdd_Click(object sender, RoutedEventArgs e)
         {
-            StudentManager.Add();
+            WindowsManager.Add();
         }
 
         private void ButtonFind_Click(object sender, RoutedEventArgs e)
         {
-            StudentManager.Find();
+            WindowsManager.Find();
         }
 
         private void ButtonShow_Click(object sender, RoutedEventArgs e)
         {
-            StudentManager.Show();
+            WindowsManager.Show();
         }
 
         private void ButtonSort_Click(object sender, RoutedEventArgs e)
         {
-            StudentManager.Sort();
+            WindowsManager.Sort();
         }
 
         private void ButtonDelete_Click(object sender, RoutedEventArgs e)
         {
-            StudentManager.Delete();
+            WindowsManager.Delete();
         }
     }
 }
