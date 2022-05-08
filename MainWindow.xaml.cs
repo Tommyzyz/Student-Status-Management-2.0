@@ -50,10 +50,5 @@ namespace Student_Status_Management_2._0
         {
             WindowsManager.Sort();
         }
-
-        private void ButtonDelete_Click(object sender, RoutedEventArgs e)
-        {
-            WindowsManager.Delete();
-        }
     }
 }

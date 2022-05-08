@@ -26,10 +26,18 @@ namespace Student_Status_Management_2._0.Window
 
         private void ButtonOk_Click(object sender, RoutedEventArgs e)
         {
-            int[] score=new int[] { int.Parse(ChineseText.Text),int.Parse(MathText.Text),int.Parse(EnglishText.Text),int.Parse(PhysicsText.Text),int.Parse(C_Text.Text)};
-            Student st = new Student(int.Parse(IdText.Text),NameText.Text,score);
-            Data.studentsList.Add(st);
-            MessageBox.Show("添加成功");
+            if (NameText.Text != null && IdText.Text != null && ChineseText.Text != null && MathText.Text != null && EnglishText.Text != null && PhysicsText.Text != null && C_Text.Text != null)
+            {
+                int[] score = new int[] { int.Parse(ChineseText.Text), int.Parse(MathText.Text), int.Parse(EnglishText.Text), int.Parse(PhysicsText.Text), int.Parse(C_Text.Text) };
+                Student st = new Student(int.Parse(IdText.Text), NameText.Text, score);
+                Data.studentsList.Add(st);
+                MessageBox.Show("添加成功");
+            }
+            else
+            {
+                MessageBox.Show("错误");
+            }
+
         }
     }
 }
