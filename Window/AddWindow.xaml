@@ -22,6 +22,6 @@
         <Label Content="成绩" HorizontalAlignment="Left" Margin="96,136,0,0" VerticalAlignment="Top"/>
         <Label Content="物理" HorizontalAlignment="Left" Margin="400,170,0,0" VerticalAlignment="Top"/>
         <Label Content="C#" HorizontalAlignment="Left" Margin="500,170,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="ButtonOk" Content="确认添加" HorizontalAlignment="Left" Margin="530,100,0,0" VerticalAlignment="Top" Width="58" Click="ButtonOk_Click"/>
+        <Button x:Name="ButtonOk" Content="确认添加" HorizontalAlignment="Left" Margin="530,50,0,0" VerticalAlignment="Top" Width="58" Click="ButtonOk_Click"/>
     </Grid>
 </Window>

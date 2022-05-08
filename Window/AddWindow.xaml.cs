@@ -29,6 +29,7 @@ namespace Student_Status_Management_2._0.Window
             int[] score=new int[] { int.Parse(ChineseText.Text),int.Parse(MathText.Text),int.Parse(EnglishText.Text),int.Parse(PhysicsText.Text),int.Parse(C_Text.Text)};
             Student st = new Student(int.Parse(IdText.Text),NameText.Text,score);
             Data.studentsList.Add(st);
+            MessageBox.Show("添加成功");
         }
     }
 }
