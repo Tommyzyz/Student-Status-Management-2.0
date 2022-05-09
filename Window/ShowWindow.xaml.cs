@@ -26,7 +26,6 @@ namespace Student_Status_Management_2._0.Window
             foreach (Student student in Data.studentsList)
             {
                 ShowText.Text += student.Name+"\t"+student.Id + "\t" +student.Gpa.ToString("F2") + "\t" +student.Rank+ "\r\n";
- 
             }
             
         }

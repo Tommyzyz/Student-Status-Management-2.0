@@ -11,8 +11,10 @@
         <Button x:Name="buttonFind" Content="查找学生信息" HorizontalAlignment="Center" Margin="0,147,0,0" VerticalAlignment="Top" Width="102" Click="ButtonFind_Click"/>
         <Button x:Name="buttonShow" Content="显示学生信息" HorizontalAlignment="Center" Margin="0,183,0,0" VerticalAlignment="Top" Width="102" Click="ButtonShow_Click"/>
         <Button x:Name="ButtonSort" Content="排序学生信息" HorizontalAlignment="Center" Margin="0,226,0,0" VerticalAlignment="Top" Width="102" Click="ButtonSort_Click"/>
-        <Button Content="退出" HorizontalAlignment="Center" Margin="0,342,0,0" VerticalAlignment="Top" Width="102" AutomationProperties.Name="" Click="Button_Click"/>
+        <Button Content="退出" HorizontalAlignment="Center" Margin="0,386,0,0" VerticalAlignment="Top" Width="102" AutomationProperties.Name="" Click="Button_Click"/>
         <Label Content="学籍管理系统" HorizontalAlignment="Center" Margin="0,36,0,0" VerticalAlignment="Top" Width="160" FontSize="24" FontWeight="Bold" FontStyle="Italic" RenderTransformOrigin="0.285,0.387"/>
+        <Button x:Name="ButtonSave" Content="保存学生信息" HorizontalAlignment="Center" Margin="0,278,0,0" VerticalAlignment="Top" Width="102" Click="ButtonSave_Click"/>
+        <Button x:Name="ButtonLoad" Content="加载学生信息" HorizontalAlignment="Center" Margin="0,319,0,0" VerticalAlignment="Top" Width="102" Click="ButtonLoad_Click"/>
 
     </Grid>
 </Window>
