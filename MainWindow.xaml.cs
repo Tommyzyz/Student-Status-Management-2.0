@@ -50,5 +50,17 @@ namespace Student_Status_Management_2._0
         {
             WindowsManager.Sort();
         }
+
+        private void ButtonSave_Click(object sender, RoutedEventArgs e)
+        {
+            Data.SaveData();
+            MessageBox.Show("保存成功");
+        }
+
+        private void ButtonLoad_Click(object sender, RoutedEventArgs e)
+        {
+            Data.LoadData();
+            MessageBox.Show("加载成功");
+        }
     }
 }
