@@ -7,6 +7,12 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800" MinWidth="800" MaxWidth="800" MinHeight="450" MaxHeight="450">
     <Grid Height="430" MinWidth="800" MaxWidth="800" MinHeight="430" MaxHeight="430">
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="1,1" StartPoint="0,0">
+                <GradientStop Color="#FF1C6492"/>
+                <GradientStop Color="#FFB31C1C" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
         <Button x:Name="buttonAdd" Content="新增学生信息" HorizontalAlignment="Center" Margin="0,110,0,0" VerticalAlignment="Top" Width="102" AutomationProperties.HelpText="" Click="ButtonAdd_Click" />
         <Button x:Name="buttonFind" Content="查找学生信息" HorizontalAlignment="Center" Margin="0,147,0,0" VerticalAlignment="Top" Width="102" Click="ButtonFind_Click"/>
         <Button x:Name="buttonShow" Content="显示学生信息" HorizontalAlignment="Center" Margin="0,183,0,0" VerticalAlignment="Top" Width="102" Click="ButtonShow_Click"/>
