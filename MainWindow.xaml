@@ -15,31 +15,31 @@
         </Grid.Background>
         <Grid.ColumnDefinitions>
             <ColumnDefinition></ColumnDefinition>
-            <ColumnDefinition MinWidth="180"></ColumnDefinition>
+            <ColumnDefinition MinWidth="180" Width="*"></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
         </Grid.ColumnDefinitions>
         <StackPanel Grid.Column="1" VerticalAlignment="Center">
             <Grid>
-                <Label Grid.Column="1" Content="学籍管理系统" Margin="0,20,0,0" Width="160" FontSize="24" FontWeight="Bold" FontStyle="Italic" RenderTransformOrigin="0.285,0.387"/>
+                <Label Content="学籍管理系统" Margin="0,20,0,0" Width="160" FontSize="24" FontWeight="Bold" FontStyle="Italic" RenderTransformOrigin="0.285,0.387"/>
             </Grid>
             <Grid>
-                <Button Grid.Column="1" x:Name="buttonAdd" Content="新增学生信息" Margin="0,20,0,10" Width="102"  Click="ButtonAdd_Click" />
+                <Button x:Name="buttonAdd" Content="新增学生信息" Margin="0,20,0,10" Width="102"  Click="ButtonAdd_Click" />
             </Grid>
-                <Button Grid.Column="1" x:Name="buttonFind" Content="查找学生信息"  Margin="0,20,0,10" Width="102" Click="ButtonFind_Click"/>
+                <Button x:Name="buttonFind" Content="查找学生信息"  Margin="0,20,0,10" Width="102" Click="ButtonFind_Click"/>
             <Grid>
-                <Button Grid.Column="1" x:Name="buttonShow" Content="显示学生信息"  Margin="0,20,0,10" Width="102" Click="ButtonShow_Click"/>
-            </Grid>
-            <Grid>
-                <Button Grid.Column="1" x:Name="ButtonSort" Content="排序学生信息"  Margin="0,20,0,10" Width="102" Click="ButtonSort_Click"/>
+                <Button x:Name="buttonShow" Content="显示学生信息"  Margin="0,20,0,10" Width="102" Click="ButtonShow_Click"/>
             </Grid>
             <Grid>
-                <Button Grid.Column="1" x:Name="ButtonSave" Content="保存学生信息"  Margin="0,20,0,10" Width="102" Click="ButtonSave_Click"/>
+                <Button x:Name="ButtonSort" Content="排序学生信息"  Margin="0,20,0,10" Width="102" Click="ButtonSort_Click"/>
             </Grid>
             <Grid>
-                <Button Grid.Column="1" x:Name="ButtonLoad" Content="加载学生信息"  Margin="0,20,0,10" Width="102" Click="ButtonLoad_Click"/>
+                <Button x:Name="ButtonSave" Content="保存学生信息"  Margin="0,20,0,10" Width="102" Click="ButtonSave_Click"/>
             </Grid>
             <Grid>
-                <Button Grid.Column="1" Content="退出"  Margin="0,20,0,20" Width="102"  Click="Button_Click"/>
+                <Button x:Name="ButtonLoad" Content="加载学生信息"  Margin="0,20,0,10" Width="102" Click="ButtonLoad_Click"/>
+            </Grid>
+            <Grid>
+                <Button Content="退出"  Margin="0,20,0,20" Width="102"  Click="Button_Click"/>
             </Grid>
         </StackPanel>
     </Grid>
